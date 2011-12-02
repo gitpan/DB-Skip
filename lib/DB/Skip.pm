@@ -1,7 +1,7 @@
 package DB::Skip;
 
 # ABSTRACT: make the perl debugger skip statements in given packages or subs
-our $VERSION = '1.113360'; # VERSION
+our $VERSION = '1.113362'; # VERSION
 
 
 use strict;
@@ -72,7 +72,7 @@ DB::Skip - make the perl debugger skip statements in given packages or subs
 
 =head1 VERSION
 
-version 1.113360
+version 1.113362
 
 =head1 SYNOPSIS
 
@@ -110,7 +110,7 @@ This can be somewhat frustrating if you're using modules like Moo that insert a
 lot of busywork functions that are necessary for execution, but obscure the
 actual flow in the debugger.
 
-Loading this module in your code will replace the debugger's main function with
+Loading this module in your code will augment the debugger's main function with
 one that silently ignores statements when their package or sub matches any of
 the given parameters.
 

@@ -50,7 +50,7 @@
    "provides" : {
       "DB::Skip" : {
          "file" : "lib/DB/Skip.pm",
-         "version" : "1.113360"
+         "version" : "1.113362"
       }
    },
    "release_status" : "stable",
@@ -66,6 +66,6 @@
          "web" : "https://github.com/wchristian/db-skip"
       }
    },
-   "version" : "1.113360"
+   "version" : "1.113362"
 }
 
