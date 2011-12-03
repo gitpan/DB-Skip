@@ -39,7 +39,7 @@
       },
       "test" : {
          "requires" : {
-            "Capture::Tiny" : 0,
+            "Capture::Tiny" : "0.13",
             "File::Find" : 0,
             "File::Temp" : 0,
             "Test::InDistDir" : 0,
@@ -50,7 +50,7 @@
    "provides" : {
       "DB::Skip" : {
          "file" : "lib/DB/Skip.pm",
-         "version" : "1.113362"
+         "version" : "1.113370"
       }
    },
    "release_status" : "stable",
@@ -66,6 +66,6 @@
          "web" : "https://github.com/wchristian/db-skip"
       }
    },
-   "version" : "1.113362"
+   "version" : "1.113370"
 }
 

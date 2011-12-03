@@ -12,7 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "make the perl debugger skip statements in given packages or subs",
   "AUTHOR" => "Christian Walde <walde.christian\@googlemail.com>",
   "BUILD_REQUIRES" => {
-    "Capture::Tiny" => 0,
+    "Capture::Tiny" => "0.13",
     "File::Find" => 0,
     "File::Temp" => 0,
     "Test::InDistDir" => 0,
@@ -29,7 +29,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.113362",
+  "VERSION" => "1.113370",
   "test" => {
     "TESTS" => "t/*.t"
   }
