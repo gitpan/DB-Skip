@@ -4,7 +4,7 @@
       "Christian Walde <walde.christian@googlemail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621",
+   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
    "license" : [
       "unrestricted"
    ],
@@ -50,7 +50,7 @@
    "provides" : {
       "DB::Skip" : {
          "file" : "lib/DB/Skip.pm",
-         "version" : "1.113370"
+         "version" : "1.121090"
       }
    },
    "release_status" : "stable",
@@ -66,6 +66,6 @@
          "web" : "https://github.com/wchristian/db-skip"
       }
    },
-   "version" : "1.113370"
+   "version" : "1.121090"
 }
 

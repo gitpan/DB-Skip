@@ -1,11 +1,11 @@
+use strict;
+use warnings;
+
 package DB::Skip;
 
 # ABSTRACT: make the perl debugger skip statements in given packages or subs
-our $VERSION = '1.113370'; # VERSION
+our $VERSION = '1.121090'; # VERSION
 
-
-use strict;
-use warnings;
 
 {
     my $old_db;
@@ -43,10 +43,12 @@ sub import {
         return if $sub and $sub_skip{$sub};
 
         for my $pkg_re ( @pkg_regex ) {
+            next if !$pkg_re;
             return if $pkg =~ $pkg_re;
         }
 
         for my $sub_re ( @sub_regex ) {
+            next if !$sub_re;
             return if $sub =~ $sub_re;
         }
 
@@ -72,7 +74,7 @@ DB::Skip - make the perl debugger skip statements in given packages or subs
 
 =head1 VERSION
 
-version 1.113370
+version 1.121090
 
 =head1 SYNOPSIS
 
@@ -162,15 +164,15 @@ import not overwrite the one you set and use your reference instead. If you set
 it after calling import, import will start using your code reference from that
 point on forward.
 
-=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
 
 =head1 SUPPORT
 
 =head2 Bugs / Feature Requests
 
-Please report any bugs or feature requests by email to C<bug-db-skip at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/Public/Dist/Display.html?Name=DB-Skip>. You will be automatically notified of any
-progress on the request by the system.
+Please report any bugs or feature requests through the issue tracker
+at L<http://rt.cpan.org/Public/Dist/Display.html?Name=DB-Skip>.
+You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
 
@@ -187,11 +189,14 @@ Christian Walde <walde.christian@googlemail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Christian Walde.
 
-This is free software, licensed under:
+Christian Walde has dedicated the work to the Commons by waiving all of his
+or her rights to the work worldwide under copyright law and all related or
+neighboring legal rights he or she had in the work, to the extent allowable by
+law.
 
-  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, Version 2, December 2004
+Works under CC0 do not require attribution. When citing the work, you should
+not imply endorsement by the author.
 
 =cut
 

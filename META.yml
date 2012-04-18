@@ -11,7 +11,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300003, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
 license: unrestricted
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,7 +28,7 @@ no_index:
 provides:
   DB::Skip:
     file: lib/DB/Skip.pm
-    version: 1.113370
+    version: 1.121090
 requires:
   perl: 5.006
   strict: 0
@@ -37,4 +37,4 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=DB-Skip
   homepage: https://github.com/wchristian/db-skip
   repository: https://github.com/wchristian/db-skip.git
-version: 1.113370
+version: 1.121090
