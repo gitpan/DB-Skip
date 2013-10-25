@@ -4,7 +4,7 @@ use warnings;
 package DB::Skip;
 
 # ABSTRACT: make the perl debugger skip statements in given packages or subs
-our $VERSION = '1.121090'; # VERSION
+our $VERSION = '1.132980'; # VERSION
 
 
 {
@@ -74,7 +74,7 @@ DB::Skip - make the perl debugger skip statements in given packages or subs
 
 =head1 VERSION
 
-version 1.121090
+version 1.132980
 
 =head1 SYNOPSIS
 

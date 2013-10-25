@@ -12,7 +12,7 @@ perlcritic.rc
 t/00-compile.t
 t/basic.t
 t/bin/example.pl
-t/lib/Devel/Caller.pm
+t/lib/Devel/DBSkipCaller.pm
 xt/author/critic.t
 xt/author/pod-spell.t
 xt/release/distmeta.t
